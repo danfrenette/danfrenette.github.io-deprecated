@@ -1,0 +1,11 @@
+.wow{ class: "fadeIn#{fade_in_direction}Big #{last ? "one_third_last" : "one_third"}",
+"data-wow-duration" => "2s", "data-wow-offset" => "80" }
+  .infopanel
+    = link_to gif_path, class: "fancybox", rel: "group2" do
+      .eye.portfolio-image
+        = image_tag image_path, class: "portfolio-image"
+    %h5= title
+    %p= caption
+
+    = link_to home_page.github_link + github_repo, target: "_blank" do
+      %i.icon-github-circled

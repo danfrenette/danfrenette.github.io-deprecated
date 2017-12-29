@@ -1,0 +1,335 @@
+#socialsection
+  #social-left
+    = link_to @home_page.github_link, target: "_blank" do
+      %i.icon-github-circled
+    = link_to @home_page.linkedin_link, target: "_blank" do
+      %i.icon-linkedin
+    = link_to @home_page.twitter_link, target: "_blank" do
+      %i.icon-twitter
+    = link_to @home_page.stackoverflow_link, target: "_blank" do
+      %i.icon-stackoverflow
+  #social-button
+  #social-right
+    = link_to @home_page.twitter_share_link, target: "_blank"  do
+      %i.icon-twitter
+    = link_to @home_page.linkedin_share_link, target: "_blank"  do
+      %i.icon-linkedin
+    = link_to @home_page.facebook_share_link, target: "_blank"  do
+      %i.icon-facebook
+%header
+  .header-container
+    #menu.menu
+      #nav.nav
+        %ul
+          %li
+            = link_to "Home", "#top"
+          %li
+            = link_to "About", "#About"
+          %li
+            = link_to "Skills", "#Skills"
+          %li
+            = link_to "Resume", "#CV"
+          %li
+            = link_to "Things I've Made", "#Portfolio"
+          %li
+            = link_to "Contact", "#Contact"
+      #menu-button
+#video_element
+  .huge-title
+    = image_tag "headshot.jpg", class: "headshot wow",
+      data: { "wow-offset" => "80", "wow-duration" => "1s", "wow-delay" => "3s" }
+    %h1.wow.bounceInDown{"data-wow-duration" => "3s", "data-wow-offset" => "80"}
+      Dan Frenette
+    .testimonials.owl-carousel
+      %div
+        .button-box
+          %h4
+            In a hurry? Here's my
+            = link_to "skills and résumé", "#Skills"
+      %div
+        .button-box
+          %h4
+            Full Stack Ruby on Rails Developer
+            %br
+            in the Greater Boston Area
+      %div
+        .button-box
+          %h4
+            Graduate of the 2014 Metis
+            %br
+            Ruby on Rails Programming Bootcamp
+            %br
+            (powered by thoughtbot)
+
+      %div
+        .button-box
+          %h4
+            Human behavior/psychology geek
+            %br
+            with an affinity for beautifully written code
+
+  #godown.floating
+    %p
+      = link_to "Why I'm Different", "#About"
+    = image_tag "godown.png"
+  .shade
+.wrapper
+  .container
+    .content2
+      .hero
+        %h3 At a glance
+        .one_third.wow.fadeInUp{"data-wow-duration" => "1s", "data-wow-offset" => "120"}
+          %h4 INFO
+          %h5 Dan Frenette
+          %h5 Boston, MA
+        .one_third.wow.fadeInUp{"data-wow-delay" => "0.2s", "data-wow-duration" => "1s", "data-wow-offset" => "120"}
+          %h4 PERSONAL INTERESTS
+          %h5
+            I'm a health and fitness addict - one of those weirdos that will
+            hike a mountain with a weighted vest, and do yoga at the top. I also
+            love reading!
+        .one_third_last.wow.fadeInUp{"data-wow-delay" => "0.3s", "data-wow-duration" => "1s", "data-wow-offset" => "120"}
+          %h4 PROFESSIONAL INTERESTS
+          %h5
+            Working with new and intresting API's, as well as daily
+            pair-programming to develop my skills both as a teacher and a
+            developer. Currently, I'm learning the ins and outs of Vue JS!
+        .one_third.wow.fadeInUp{"data-wow-duration" => "1s", "data-wow-offset" => "120"}
+          %h4 LINKS
+          = link_to @home_page.github_link, target: "_blank" do
+            %i.icon-github-circled
+          = link_to @home_page.linkedin_link, target: "_blank" do
+            %i.icon-linkedin
+          = link_to @home_page.twitter_link, target: "_blank" do
+            %i.icon-twitter
+        .one_third.wow.fadeInUp{"data-wow-delay" => "0.2s", "data-wow-duration" => "1s", "data-wow-offset" => "120"}
+          %h4 EXPERIENCE
+          %h5
+            I'm a thoughtbot-trained Ruby on Rails Developer, and partake in
+            = link_to "daily coding challenges", 
+              "https://www.codewars.com/users/danfrenette", target: "_blank"
+            to reinforce these lessons. I also
+            = link_to "continue to develop Rails apps", "#Portfolio"
+            in my free time for fun and practice. I've been coding in Ruby and
+            JavaScript since 2013, and I'm an avid reader of all things
+            programming.
+        .one_third_last.wow.fadeInUp{"data-wow-delay" => "0.3s", "data-wow-duration" => "1s", "data-wow-offset" => "120"}
+          %h4 TOOLS I USE 
+          %h5
+            %ul
+              %li
+                Retina Macbook Pro 15”
+              %li
+                Sennheiser HD 700 Series Headphones
+              %li
+                Rode NT-USB USB Condenser Microphone
+              %li
+                Vim, Tmux, Zsh
+              %li
+                Ubuntu and OSX
+
+            Check out my
+            = link_to "skills", "#Skills"
+            for the specific programming languages I use
+
+    .whitecontainer
+      #About.content
+        %h2.border.wow.fadeInRightBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"} About me
+        %p
+          My name's Dan, and I like designing thoughtful web apps with a user's
+          psychology in mind. I'm a graduate of the comprehensive Metis
+          Ruby on Rails programming bootcamp taught by
+          = link_to "thoughtbot", "https://thoughtbot.com/", target: "_blank"
+          , and have a
+          heavy interest in both front-end UI design and back-end feature
+          design. I'd been studying psychology both formally and informally for
+          three years before following my passion for web-design. Now, I want to
+          use my knowledge to put amazing products into the world.
+
+        %blockquote.wow.fadeInLeftBig{"data-wow-duration" => "3s", "data-wow-offset" => "80"}
+          %p
+            Programming is my passion and my craft, I take it extremely
+            seriously and am always interested in working with people that I can
+            learn from."
+        = link_to @home_page.email_link + "?subject=Pair%20with%20Me" do
+          = image_tag "pairwithme.svg", id: "pair-with-me",
+            class: "wow fadeInUp", data: {"wow-duration" => "1s", "wow-offset" => "120"}
+
+    .parallax1
+      #Skills.content
+        %h2.border.wow.fadeInRightBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"} My Skills
+        .half_column1.wow.fadeInLeftBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"}
+          %p
+            One of the best things about being a programmer is that I get to
+            play the roles of architect, engineer, and designer all at once. I'm
+            always looking for new and interesting frameworks and languages to
+            master and incorporate into my skillset.
+          %p
+            These are the languages and frameworks I'm most proficient with. For
+            a more complete list, click the résumé download button to view or
+            download my formal résumé.
+        .half_column2.wow.fadeInUpBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"}
+          .half_column1
+            %ul
+              %li Ruby 2.4.0+
+              %li Rails 5.1
+              %li JavaScript ES6
+              %li jQuery
+          .half_column2
+            %ul
+              %li HTML/Haml
+              %li CSS3/Sass
+              %li PostgreSQL
+              %li Git
+
+          .button-box
+            = link_to "GitHub Profile", @home_page.github_link, target: "_blank", 
+              class: "button"
+            = link_to "Résumé Download", @home_page.resume_download, 
+              target: "_blank", class: "button"
+
+    .whitecontainer
+      #CV.content
+        %h2.border.wow.fadeInRightBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"} Résumé
+
+        .one_third.wow.fadeInUp{"data-wow-duration" => "2s", "data-wow-offset" => "80"}
+          %h2 Work Experience
+
+        .two_third_last.wow.fadeInUpBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"}
+          %h3 Full-Stack Ruby on Rails Developer
+          %h5
+            = link_to "salesEQUITY", "https://www.salesequity.com/how-it-works/", 
+              target: "_blank"
+          %p.small Ruby on Rails
+          %p.small JavaScript
+          %p.small jQuery
+          %p.small Rspec
+          %p.small Capybara
+          %p.small PostgreSQL
+          %p.small Heroku
+          %p.small AWS
+          %p
+            salesEQUITY is a "Client Engagement Platform". It analyzes surveys
+            taken by the user's clients with a patented algorithm to check the
+            status of the relationship. This helps identify areas that need
+            growth, or inversely, areas where the user is undervaluing
+            themselves.
+            %br
+            %br
+            During my time at salesEQUITY, I practiced strict TDD to develop new
+            features or refactor older code, AGILE programming methodology to 
+            set goals and collaborate with other developers, and
+            pair-programming to teach and learn new skills.
+            %br
+            %br
+
+            Working on a small team of just three developers allowed me to take
+            on a plethora of different projects - new features, refactoring, UX
+            Design, etc. The largest of which was
+            = link_to "Trusted Advisor Action Plans", 
+              "https://www.salesequity.com/solutions/"
+            which was built for clients who wanted to do more than just analyze
+            data, but actually find solutions. The feature had to be built and
+            pushed under an extremely tight deadline. However, because the code
+            I was writing was extremely modular, I was able to constantly re-use
+            already written code to produce a product ahead of schedule.
+
+        .bigspace
+
+          %hr
+
+        .bigspace
+
+        .one_third.clearfix.wow.fadeInUp{"data-wow-duration" => "2s", "data-wow-offset" => "80"}
+          %h2 Education
+        .two_third_last.wow.fadeInUpBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"}
+          %h3 thoughtbot / Metis
+          %h5 Boston, MA
+          %p.small Ruby on Rails
+          %p.small JavaScript
+          %p.small Object Oriented Design
+          %p.small Programming Antipatterns
+          %p.small Pair Programming
+          %p.small API's
+          %p.small Test-Driven Development
+          %p
+            At the end of the Summer of 2014, I decided to quit my job and take
+            thoughtbot's third and final "Metis" Ruby on Rails course.
+            thoughtbot is an incredible power house in the Rails development
+            world, both as a consultancy and a developer of several of the 
+            widely-used pieces of open-source software for Rails developers.
+            I joined to get out of my personal rat-race, but I got so much more
+            than I bargained for.
+            %br
+            %br
+            Most programming bootcamps teach their students about technologies,
+            which thoughtbot did a stellar job of. I learned a ton about Ruby,
+            Rails, PostgreSQL, JavaScript, and all of the then-latest
+            technologies. But under the surface, Metis was really a bootcamp
+            about how to think like a developer.
+            %br
+            %br
+            I learned the principles of Object Oriented Design, the importance
+            of Test-Driven Development, what a proper Git workflow looks like,
+            pair programming etiquette, how to network and talk to other
+            developers and find mentors, I could go on. Metis was a
+            life-changing experience that I'll take with me everywhere I go.
+        .two_third_last.wow.fadeInUpBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"}
+          %h3 Nashua Community College
+          %h5 Nashua, NH
+          %p.small Associates Degree in Psychology (Incomplete)
+          %p
+            During my time at Nashua Community College I took courses towards
+            an Associates Degree in Liberal Arts with a concentration in
+            Psychology. My coursework included human behavioral studies,
+            human-computer interaction research, statistics, and policy analysis
+            on emerging technologies on society.
+          %br
+            %hr
+              %br
+                .button-box
+                  = link_to "Email Me", "#Contact", class: "button"
+                  = link_to "LinkedIn Profile", @home_page.linkedin_link,
+                    target: "_blank", class: "button"
+
+    .parallax1
+      #Portfolio.content
+        %h2.border.wow.fadeInRightBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"} Things I've Made
+        .center-align
+          = render partial: "portfolio_item", locals: { fade_in_direction: :Left,
+            title: "Awesome Chat App", caption: "This group chat app was my first ever foray into Rails 5, and more specifically to ActionCable. I had a blast learning how to do things like creating custom cookies to pass in user specific information, and adding a divider right before a user’s unread messages.",
+            last: false, github_repo: "chatrooms", home_page: @home_page,
+            image_path: "groupchatfinal.png", gif_path: "groupchatfinal.png" }
+          = render partial: "portfolio_item", locals: { fade_in_direction: :Down,
+            title: "Catch of the Day", caption: "Another project used to springboard my knowledge in another technology, this time I was learning React! Nothing too fancy here, just a basic CRUD app with a solid execution. Sign in with your choice of Twitter, Facebook, or GitHub, and get started building your online seafood market!",
+            last: false, github_repo: "Catch-of-the-Day", home_page: @home_page,
+            image_path: "catch.png", gif_path: "catch.png" }
+
+    #Contact.greycontainer
+      .content.centered
+        %h2 Contact
+        %p 
+          Whether you're looking for programming advice, want to talk about
+          careers, or you're just bored and want to chat, I always respond to
+          emails within 24 hours.
+        %form#contact_form.wow.fadeInUpBig{action: "#",
+        "accept-charset" => "UTF-8", "data-wow-duration" => "2s",
+        "data-wow-offset" => "80", method: "post"}
+          %p
+            %label Email Address
+            %input#email.requiredField.email{name: "email", type: "text"}
+          %p
+            %label Subject
+            %input#subject.requiredField.name{name: "subject", type: "text"}
+          %p
+            %label Your Message
+            %textarea#message.requiredField.message{cols: "30", name: "message", rows: "8"}
+          %p
+            %input#submitted.submit{name: "submitted", type: "submit", value: "Submit"}
+    %footer
+      .content
+        %p
+          %br/
+          Thanks for reading! Feel free to drop be a line with the form above or at:
+          %br/
+          = link_to @home_page.email, @home_page.email_link

@@ -12,7 +12,17 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require jquery3
 //= require popper
+//= require jquery.min
+//= require owl.carousel.js
+//= require jquery.fitvids.js
+//= require jquery.fancybox.pack.js
+//= require retina.js
+//= require jquery.scrollToTop.min.js
+//= require jquery.fs.wallpaper.js
+//= require jquery.easing.1.3.js
+//= require jquery.plusanchor.js
+//= require jquery.knob.js
+//= require app.js
+//= require wow.min.js
 //= require bootstrap-sprockets
-//= require_tree .

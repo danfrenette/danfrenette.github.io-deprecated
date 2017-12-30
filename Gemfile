@@ -24,6 +24,7 @@ gem 'turbolinks', '~> 5'
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'faker', git: 'https://github.com/stympy/faker.git'
+  gem 'pry'
 end
 
 group :development do
@@ -31,7 +32,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'bullet'
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'pry'
   gem 'rubocop', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'

@@ -13,7 +13,6 @@ class HomePage
     twitter_share_link:   "https://twitter.com/home?status=#{TITLE}",
     facebook_share_link:  "https://www.facebook.com/sharer/sharer.php?"\
                           "u=danfrenette.codes",
-    stackoverflow_link:   "https://stackoverflow.com/users/4179850/dan-frenette",
     email_link:           "mailto: Dan.R.Frenette@gmail.com",
     email:                "Dan.R.Frenette@gmail.com",
     resume_download:      "https://www.dropbox.com/s/r3z0q54ima7dtlu/"\

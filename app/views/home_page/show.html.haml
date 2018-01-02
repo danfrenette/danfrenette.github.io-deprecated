@@ -6,8 +6,6 @@
       %i.icon-linkedin
     = link_to @home_page.twitter_link, target: "_blank" do
       %i.icon-twitter
-    = link_to @home_page.stackoverflow_link, target: "_blank" do
-      %i.icon-stackoverflow
   #social-button
   #social-right
     = link_to @home_page.twitter_share_link, target: "_blank"  do
@@ -329,7 +327,7 @@
             = f.input :body, as: :text, label: false,
               input_html: { rows: 10, class: "requiredField message" }
           %p
-            %input#submitted.submit{name: "submitted", type: "submit", value: "Submit"}
+            = f.submit "Submit", class: "submit", id: "submitted"
     %footer
       .content
         %p

@@ -312,18 +312,22 @@
           Whether you're looking for programming advice, want to talk about
           careers, or you're just bored and want to chat, I always respond to
           emails within 24 hours.
-        %form#contact_form.wow.fadeInUpBig{action: "#",
-        "accept-charset" => "UTF-8", "data-wow-duration" => "2s",
-        "data-wow-offset" => "80", method: "post"}
+
+        = simple_form_for @home_page.contact_email, html: { method: :post,
+          id: "contact_form", class: "wow fadeInUpBig" },
+          data: { "wow-duration" => "2s", "wow-offset" => "80" } do |f|
           %p
             %label Email Address
-            %input#email.requiredField.email{name: "email", type: "text"}
+            = f.input :email, as: :string, label: false,
+              input_html: { class: "requiredField email" }
           %p
             %label Subject
-            %input#subject.requiredField.name{name: "subject", type: "text"}
+            = f.input :subject, label: false,
+              input_html: { class: "requiredField name" }
           %p
             %label Your Message
-            %textarea#message.requiredField.message{cols: "30", name: "message", rows: "8"}
+            = f.input :body, as: :text, label: false,
+              input_html: { rows: 10, class: "requiredField message" }
           %p
             %input#submitted.submit{name: "submitted", type: "submit", value: "Submit"}
     %footer

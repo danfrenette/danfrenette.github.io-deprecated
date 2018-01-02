@@ -298,7 +298,7 @@
 
         $.post($(this).attr('action'), formInput, function (data) {
           $('form#contact_form').slideUp("fast", function () {
-            $(this).before('<p class="success">Thank you! Your email was successfully sent. I will contact you as soon as possible.</p>');
+            $(this).before('<p class="success">Thanks for reaching out! Your email was successfully sent. I will contact you within 24 hours.</p>');
           });
         });
       }

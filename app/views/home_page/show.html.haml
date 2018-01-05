@@ -327,6 +327,8 @@
             = f.input :body, as: :text, label: false,
               input_html: { rows: 10, class: "requiredField message" }
           %p
+            = recaptcha_tags
+          %p
             = f.submit "Submit", class: "submit", id: "submitted"
     %footer
       .content

@@ -2,7 +2,7 @@ class ContactEmailsController < ApplicationController
   def create
     contact_email = ContactEmail.new(contact_email_params)
 
-    if contact_email.valid?
+    if verify_recaptcha(model: contact_email) && contact_email.valid?
       contact_email.save
       ContactEmailMailer.recieve_from_user(contact_email).deliver_now
       flash.notice = "Thanks for reaching out!"

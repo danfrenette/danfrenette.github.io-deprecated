@@ -1,3 +1,9 @@
+$background-color: #F9431D;
+$background-color-dark: darken($background-color, 10%);
+// lighter-red: #F9431D
+// ruby-red:    #9B111E;
+// gray:        #383838;
+
 @charset "UTF-8";
 /* CSS Document for UNO Personal page - Copyright 2014 Jonathan Atkinson http://cr3ativ.com */
 *, *:before, *:after {
@@ -366,13 +372,13 @@ h5 ul li {
 }
 /* main backgrounds */
 .whitecontainer {
-  background: none repeat scroll 0 0 #097ecb;
+  background: none repeat scroll 0 0 $background-color;
 	width: 100%;
 	padding: 80px 0;
 	overflow: auto;
 }
 .greycontainer {
-  background: none repeat scroll 0 0 #0875bd;
+  background: none repeat scroll 0 0 $background-color-dark;
 	width: 100%;
 	padding: 80px 0;
 	overflow: auto;
@@ -473,7 +479,7 @@ h5 ul li {
 	z-index: 110;
 	width: 100%;
 	text-align:center;
-    background-color: #0875bd ;
+    background-color: $background-color-dark ;
 }
 .centered { text-align: center !important; }
 .knob { color: rgba(255,255,255,0.4) !important; }
@@ -566,7 +572,7 @@ h5 ul li {
 #social-left [class^="icon-"]:before, #social-left [class*=" icon-"]:before {font-size: 24px; min-height: 24px; }
 #social-left [class^="icon-"]:hover:before, #social-left [class*=" icon-"]:hover:before {color: rgba(255, 255, 255, 1.0); }
 #social-button {
-    background-color: #0B86C8;
+    background-color: $background-color-dark;
     border-radius: 0 0 3px 3px;
     float: none;
     left: 50%;
@@ -581,8 +587,8 @@ h5 ul li {
 }
 #social-button:hover { background-color: #262B30; }
 #social-button:hover:before { 
-    border-top: 7px double #0B86C8;
-    border-bottom: 2px solid #0B86C8;
+    border-top: 7px double $background-color-dark;
+    border-bottom: 2px solid $background-color-dark;
 }
 #social-button:before {
     border-bottom: 2px solid #FFFFFF;
@@ -608,7 +614,7 @@ h5 ul li {
     z-index: 120;
     transition: all 0.3s ease-in-out;
 }
-#menu-button:hover { background-color: #0B86C8; }
+#menu-button:hover { background-color: $background-color-dark; }
 #menu-button:hover:before { 
     border-top: 7px double #ffffff;
     border-bottom: 2px solid #ffffff;
@@ -628,8 +634,8 @@ h5 ul li {
 #social-right a { min-height: 24px; color: #ffffff; display: inline-block; margin-top: 5px;}
 #social-right [class^="icon-"]:before, #social-right [class*=" icon-"]:before {font-size: 24px; min-height: 24px; }
 #social-right [class^="icon-"]:hover:before, #social-right [class*=" icon-"]:hover:before {color: rgba(255, 255, 255, 1.0); }
-#social-right:hover {background-color:#0B86C8; }
-#social-left:hover {background-color:#0B86C8; }
+#social-right:hover {background-color:$background-color-dark; }
+#social-left:hover {background-color:$background-color-dark; }
 #phone {visibility: hidden; }
 .video-container {
     position: relative;
@@ -684,7 +690,7 @@ h5 ul li {
     text-align: left;
 }
 .infopanel {
-    background: none repeat scroll 0 0 #0875BD;
+    background: none repeat scroll 0 0 $background-color-dark;
     border-radius: 3px;
     box-shadow: none;
     margin-bottom: 1.25em;
@@ -858,7 +864,7 @@ input[type=text]:focus {
     -webkit-appearance: none;
     border: none;
 } 
-input[type=submit] {
+input[type=submit], button.submit {
     padding: 15px 40px;
     display: inline-block;
     font-family: 'Raleway', sans-serif;
@@ -878,7 +884,7 @@ input[type=submit] {
     cursor: pointer;
     float: left;
 }
-input[type=submit]:hover {   
+input[type=submit]:hover, button.submit {   
 	text-decoration: none; 
 	background-color: rgba(255,255,255,1);
 	color: #0b86c8;
@@ -961,7 +967,7 @@ Menu Styling
 }
 .nav ul li a, .nav ul li a:hover { font-size: 14px; border-bottom: 0px solid transparent; }
 .nav ul li a:hover { color: #ffffff; border-top: 0px solid transparent; }
-.nav ul li:hover { background-color: #097ECB; }
+.nav ul li:hover { background-color: $background-color; }
 /*
 ==============================================
 Responsive Syling

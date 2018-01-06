@@ -52,4 +52,8 @@ group :test do
   gem 'shoulda-matchers', '~> 2.0'
 end
 
+group :production do
+  gem 'rails_12factor'
+end
+
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

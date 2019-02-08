@@ -1,0 +1,56 @@
+version: 2.0
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.5.3-stretch-node-browsers
+        environment:
+          PGHOST: 127.0.0.1
+          PGUSER: postgres
+          RAILS_ENV: test
+      - image: circleci/postgres:9.6.5
+      - image: s12v/sns:0.1.3
+    steps:
+      - checkout
+
+      # Restore bundle cache
+      - restore_cache:
+          key: devgrowth-{{ checksum "Gemfile.lock" }}
+
+      # cmake is required by Rugged, a dependency of Pronto
+      - run:
+          name: Install cmake
+          command: sudo apt-get -y -qq update && sudo apt-get -y -qq install cmake
+
+      # Bundle install dependencies
+      - run:
+          name: Install Ruby dependencies
+          command: bundle install --path vendor/bundle
+
+      # Store bundle cache
+      - save_cache:
+          key: devgrowth-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+
+      # Database setup
+      - run:
+          name: Create database
+          command: bundle exec rake db:create
+      - run:
+          name: Load database schema
+          command: bundle exec rake db:schema:load
+
+      # Tests
+      - run:
+          name: RSpec
+          command: bundle exec rspec
+
+      # Security analysis
+      - run:
+          name: Bundler Audit
+          command: bundle exec bundle-audit update && bundle exec bundle-audit check
+
+      # Save Coverage Analysis
+      - store_artifacts:
+          path: coverage
+          destination: coverage

@@ -100,7 +100,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1ace7929', e
 /* End of the gradient - keep the width, height, z-index and position in the code above!! */
 
 #video_element { width: 100%; height: 100%; background-size: cover; background-position: center center; z-index:1; }
-/* Un-comment this to apply a tiny dotted filter above the video for that 'transmission' look and feel 
+/* Un-comment this to apply a tiny dotted filter above the video for that 'transmission' look and feel
 #video_element:after {
     background: url("../img/bg-pixel-20.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
     bottom: 0;
@@ -261,7 +261,7 @@ blockquote p {
 	font-size: 20px;
 	line-height: 1.4em;
 }
-.small { 
+.small {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 3px;
     color: #FFFFFF;
@@ -273,7 +273,7 @@ blockquote p {
     padding: 3px 10px;
     position: relative;
 }
-.date { 
+.date {
     color: #FFFFFF;
     display: block;
     font-size: 14px;
@@ -383,7 +383,7 @@ h5 ul li {
 	padding: 80px 0;
 	overflow: auto;
 }
-.parallax1 { 
+.parallax1 {
     background-image: asset-url("background2.jpg");
     overflow: auto;
     padding: 80px 0;
@@ -434,9 +434,9 @@ h5 ul li {
     display: block;
     clear: both;
 }
-.hero h3 { 
+.hero h3 {
     margin: 0 0 20px;
-    opacity: 0.4; 
+    opacity: 0.4;
 }
 .hero h4 {
     color: #ffffff;
@@ -452,13 +452,13 @@ h5 ul li {
     font-weight: 500;
     text-align: left;
 }
-.hero p:before { 
+.hero p:before {
     content:'';
     display:block;
     clear: both;
     height: 50px;
 }
-.hero blockquote p:before { 
+.hero blockquote p:before {
     content:'';
     display:inline;
     clear: none;
@@ -484,8 +484,8 @@ h5 ul li {
 .centered { text-align: center !important; }
 .knob { color: rgba(255,255,255,0.4) !important; }
 .button-box {
-	margin: 0 auto; 
-	display: block; 
+	margin: 0 auto;
+	display: block;
 }
 .button-white {
    border: 2px solid rgba(255,255,255,1);
@@ -504,10 +504,10 @@ h5 ul li {
    letter-spacing: 2px;
     line-height: 0em;
 }
-.button-white:hover { 
-	background-color: rgba(255, 255, 255, 1); 
-	color: rgba(48, 66, 82, 1); 
-	text-decoration: none; 
+.button-white:hover {
+	background-color: rgba(255, 255, 255, 1);
+	color: rgba(48, 66, 82, 1);
+	text-decoration: none;
 	border: 2px solid transparent;
 	padding: 15px 40px 18px 40px;
 }
@@ -528,10 +528,10 @@ h5 ul li {
     letter-spacing: 1px;
     border-radius: 3px;
 }
-.button:hover { 
+.button:hover {
 	background-color: #262B30;
-	color: rgba(255, 255, 255, 1); 
-	text-decoration: none; 
+	color: rgba(255, 255, 255, 1);
+	text-decoration: none;
 	padding: 15px 40px;
     border-radius: 3px;
     letter-spacing: 1px;
@@ -548,14 +548,14 @@ h5 ul li {
    font-weight: 700;
    text-transform: uppercase;
    background-color: #262B30;
-   color: rgba(255, 255, 255, 1); 
+   color: rgba(255, 255, 255, 1);
    letter-spacing: 2px;
     border-radius: 3px;
     letter-spacing: 1px;
     border: none;
 }
-.button-reverse:hover {   
-	text-decoration: none; 
+.button-reverse:hover {
+	text-decoration: none;
 	background-color: rgba(255,255,255,1);
 	color: #0b86c8;
 	padding: 15px 40px;
@@ -586,7 +586,7 @@ h5 ul li {
     transition: all 0.3s ease-in-out;
 }
 #social-button:hover { background-color: #262B30; }
-#social-button:hover:before { 
+#social-button:hover:before {
     border-top: 7px double $background-color-dark;
     border-bottom: 2px solid $background-color-dark;
 }
@@ -615,7 +615,7 @@ h5 ul li {
     transition: all 0.3s ease-in-out;
 }
 #menu-button:hover { background-color: $background-color-dark; }
-#menu-button:hover:before { 
+#menu-button:hover:before {
     border-top: 7px double #ffffff;
     border-bottom: 2px solid #ffffff;
 }
@@ -640,7 +640,7 @@ h5 ul li {
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    height: 0; 
+    height: 0;
 	overflow: hidden;
 }
 #pair-with-me, .portfolio-image {
@@ -706,13 +706,13 @@ h5 ul li {
     font-size: 14px;
     line-height: 1.4em;
 }
-.infopanel h5 { 
+.infopanel h5 {
     font-size: 16px;
     margin-top: 17px;
     padding: 0;
     text-transform: uppercase;
 }
-.eye { 
+.eye {
     background-image: asset-url("magnify.gif");
     background-position: center center;
     width: 99%;
@@ -723,7 +723,7 @@ h5 ul li {
     margin: 0;
 }
 #Portfolio .one_third_last, #Portfolio .one_third {margin-bottom: 0; margin-top: 5%; }
- .one_third_last img, .one_third img, .half_column1 img, .half_column2 img, .hero img { width: 100%; height: auto; }  
+ .one_third_last img, .one_third img, .half_column1 img, .half_column2 img, .hero img { width: 100%; height: auto; }
 .one_third_last h2, .one_third h2 { font-size: 32px; padding: 0 0 10px 0; opacity: 0.4;}
 .one_third_last h3, .one_third h3 { font-size: 16px; margin: 0px; font-weight: 500; }
 .two_third_last h3 { margin: 1px 0 10px 0;}
@@ -752,7 +752,7 @@ floating Animation
 	animation-name: floating;
 	-webkit-animation-name: floating;
 
-	animation-duration: 1.5s;	
+	animation-duration: 1.5s;
 	-webkit-animation-duration: 1.5s;
 
 	animation-iteration-count: infinite;
@@ -761,26 +761,26 @@ floating Animation
 
 @keyframes floating {
 	0% {
-		transform: translateY(0%);	
+		transform: translateY(0%);
 	}
 	50% {
-		transform: translateY(8%);	
-	}	
+		transform: translateY(8%);
+	}
 	100% {
 		transform: translateY(0%);
-	}			
+	}
 }
 
 @-webkit-keyframes floating {
 	0% {
-		-webkit-transform: translateY(0%);	
+		-webkit-transform: translateY(0%);
 	}
 	50% {
-		-webkit-transform: translateY(8%);	
-	}	
+		-webkit-transform: translateY(8%);
+	}
 	100% {
 		-webkit-transform: translateY(0%);
-	}			
+	}
 }
 /*
 ==============================================
@@ -863,7 +863,7 @@ input[type=text]:focus {
     opacity: 1.0;
     -webkit-appearance: none;
     border: none;
-} 
+}
 input[type=submit], button.submit {
     padding: 15px 40px;
     display: inline-block;
@@ -876,7 +876,7 @@ input[type=submit], button.submit {
     font-weight: 700;
     text-transform: uppercase;
     background-color: #262B30;
-    color: rgba(255, 255, 255, 1); 
+    color: rgba(255, 255, 255, 1);
     letter-spacing: 2px;
     border-radius: 3px;
     letter-spacing: 1px;
@@ -884,8 +884,8 @@ input[type=submit], button.submit {
     cursor: pointer;
     float: left;
 }
-input[type=submit]:hover, button.submit {   
-	text-decoration: none; 
+input[type=submit]:hover, button.submit {
+	text-decoration: none;
 	background-color: rgba(255,255,255,1);
 	color: #0b86c8;
     border: none;
@@ -895,12 +895,12 @@ input:focus {
     -webkit-appearance: none;
     border: none;
 }
-p.success { 
-    font-weight: 600; 
+p.success {
+    font-weight: 600;
     font-size: 28px;
 }
 /* mouse grab icon for Owl Carousel */
-.grabbing { 
+.grabbing {
     cursor:url("../img/grabbing.png") 8 8, move;
 }
 .clearfix:after {
@@ -915,7 +915,7 @@ canvas { width: 100%; }
 Menu Styling
 ==============================================
 */
-.menu ul li { 
+.menu ul li {
 	display: inline;
 	margin: 0;
 	padding: 0;
@@ -1103,4 +1103,13 @@ Responsive Syling
     text-align: center;
     width: 100%;
     }
+}
+
+// Custom Stuff
+
+.row:before,
+.row:after {
+  content:"";
+  display: table ;
+  clear:both;
 }

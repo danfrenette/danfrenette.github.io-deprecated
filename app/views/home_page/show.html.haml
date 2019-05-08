@@ -74,75 +74,78 @@
 .wrapper
   .container
     .content2
-      .hero
+      .hero.at-a-glance
         %h3 At a glance
-        .one_third.wow.fadeInUp{"data-wow-duration" => "1s", "data-wow-offset" => "120"}
-          %h4 INFO
-          %h5 Dan Frenette
-          %h5 Boston, MA
-        .one_third.wow.fadeInUp{"data-wow-delay" => "0.2s", "data-wow-duration" => "1s", "data-wow-offset" => "120"}
-          %h4 PERSONAL INTERESTS
-          %h5
-            I'm a health and fitness addict - one of those weirdos that will
-            hike a mountain with a weighted vest, and do yoga at the top. I also
-            love reading!
-        .one_third_last.wow.fadeInUp{"data-wow-delay" => "0.3s", "data-wow-duration" => "1s", "data-wow-offset" => "120"}
-          %h4 PROFESSIONAL INTERESTS
-          %h5
-            Working with new and intresting API's, as well as daily
-            pair-programming to develop my skills both as a teacher and a
-            developer. Currently, I'm learning the ins and outs of Vue JS!
-        .one_third.wow.fadeInUp{"data-wow-duration" => "1s", "data-wow-offset" => "120"}
-          %h4 LINKS
-          = link_to @home_page.github_link, target: "_blank" do
-            %i.icon-github-circled
-          = link_to @home_page.linkedin_link, target: "_blank" do
-            %i.icon-linkedin
-          = link_to @home_page.twitter_link, target: "_blank" do
-            %i.icon-twitter
-        .one_third.wow.fadeInUp{"data-wow-delay" => "0.2s", "data-wow-duration" => "1s", "data-wow-offset" => "120"}
-          %h4 EXPERIENCE
-          %h5
-            I'm a thoughtbot-trained Ruby on Rails Developer, and partake in
-            = link_to "daily coding challenges",
-              "https://www.codewars.com/users/danfrenette", target: "_blank"
-            to reinforce these lessons. I also
-            = link_to "continue to develop Rails apps", "#Portfolio"
-            in my free time for fun and practice. I've been coding in Ruby and
-            JavaScript since 2013, and I'm an avid reader of all things
-            programming.
-        .one_third_last.wow.fadeInUp{"data-wow-delay" => "0.3s", "data-wow-duration" => "1s", "data-wow-offset" => "120"}
-          %h4 TOOLS I USE
-          %h5
-            %ul
-              %li
-                Retina Macbook Pro 15”
-              %li
-                Sennheiser HD 700 Series Headphones
-              %li
-                Rode NT-USB USB Condenser Microphone
-              %li
-                Vim, Tmux, Zsh
-              %li
-                Ubuntu and OSX
+        %div.row
+          .one_third.wow.fadeInUp{"data-wow-duration" => "1s", "data-wow-offset" => "120"}
+            %h4 INFO
+            %h5 Dan Frenette
+            %h5 Boston, MA
+          .one_third.wow.fadeInUp{"data-wow-delay" => "0.2s", "data-wow-duration" => "1s", "data-wow-offset" => "120"}
+            %h4 PERSONAL INTERESTS
+            %h5
+              I love a good challenge! In my spare time I'm usually in the gym,
+              training in Brazilian Jiu Jitsu, or anything else that pushes
+              boundaries! I try to balance out the challenging stuff with
+              artistic and creative things; I'm always looking for the next cool
+              concert to attend or a good book to read!
+          .one_third_last.wow.fadeInUp{"data-wow-delay" => "0.3s", "data-wow-duration" => "1s", "data-wow-offset" => "120"}
+            %h4 PROFESSIONAL INTERESTS
+            %h5
+              Working with new and intresting languages and frameworks, as well
+              as daily pair-programming to develop my skills both as a teacher
+              and a developer. Currently, I'm learning the ins and outs of Elixir
+              and Phoenix!
 
-            Check out my
-            = link_to "skills", "#Skills"
-            for the specific programming languages I use
+        %div.row
+          .one_third.wow.fadeInUp{"data-wow-duration" => "1s", "data-wow-offset" => "120"}
+            %h4 LINKS
+            = link_to @home_page.github_link, target: "_blank" do
+              %i.icon-github-circled
+            = link_to @home_page.linkedin_link, target: "_blank" do
+              %i.icon-linkedin
+            = link_to @home_page.twitter_link, target: "_blank" do
+              %i.icon-twitter
+          .one_third.wow.fadeInUp{"data-wow-delay" => "0.2s", "data-wow-duration" => "1s", "data-wow-offset" => "120"}
+            %h4 EXPERIENCE
+            %h5
+              I've been a full-stack web developer since the fall of 2014. In
+              that time I've worked with multiple different startups,
+              development consultancies, and even solo entrepreneurs to hone my
+              craft on projects big and small, but all with a focus on Ruby on
+              Rails and JavaScript.
+          .one_third_last.wow.fadeInUp{"data-wow-delay" => "0.3s", "data-wow-duration" => "1s", "data-wow-offset" => "120"}
+            %h4 TOOLS I USE
+            %h5
+              %ul
+                %li
+                  Retina Macbook Pro 15”
+                %li
+                  Sennheiser HD 700 Series Headphones
+                %li
+                  Rode NT-USB USB Condenser Microphone
+                %li
+                  Vim, Tmux, Zsh
+                %li
+                  Ubuntu and OSX
+
+              Check out my
+              = link_to "skills", "#Skills"
+              for the specific programming languages I use
+
 
     .whitecontainer
       #About.content
         %h2.border.wow.fadeInRightBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"} About me
         %p
-          My name's Dan, and I like designing thoughtful web apps with a user's
-          psychology in mind. I'm a graduate of the comprehensive Metis
+          My name's Dan, and I'm a graduate of Metis, the former
           Ruby on Rails programming bootcamp taught by
           = link_to "thoughtbot", "https://thoughtbot.com/", target: "_blank"
           , and have a
           heavy interest in both front-end UI design and back-end feature
-          design. I'd been studying psychology both formally and informally for
-          three years before following my passion for web-design. Now, I want to
-          use my knowledge to put amazing products into the world.
+          design. I had been studying psychology both formally and informally
+          for three years before following my passion for programming. Now, I
+          want to use my knowledge to put amazing products into the world.
 
         %blockquote.wow.fadeInLeftBig{"data-wow-duration" => "3s", "data-wow-offset" => "80"}
           %p
@@ -158,8 +161,7 @@
         %h2.border.wow.fadeInRightBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"} My Skills
         .half_column1.wow.fadeInLeftBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"}
           %p
-            One of the best things about being a programmer is that I get to
-            play the roles of architect, engineer, and designer all at once. I'm
+            I'd consider myself to be an incredibly curious developer; I'm
             always looking for new and interesting frameworks and languages to
             master and incorporate into my skillset.
           %p
@@ -169,9 +171,10 @@
         .half_column2.wow.fadeInUpBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"}
           .half_column1
             %ul
-              %li Ruby 2.4.0+
-              %li Rails 5.1
-              %li JavaScript ES6
+              %li Ruby 2.6+
+              %li Rails 5.2
+              %li JavaScript
+              %li React
               %li jQuery
           .half_column2
             %ul
@@ -179,6 +182,7 @@
               %li CSS3/Sass
               %li PostgreSQL
               %li Git
+              %li Docker
 
           .button-box
             = link_to "GitHub Profile", @home_page.github_link, target: "_blank",
@@ -194,14 +198,49 @@
           %h2 Work Experience
 
         .two_third_last.wow.fadeInUpBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"}
+          %h3 Software Engineer
+          %h5= link_to "The Gnar Company", "https://www.thegnar.co/", target: "_blank"
+
+          %p.small Ruby on Rails
+          %p.small JavaScript
+          %p.small React-Native
+          %p.small RSpec
+          %p.small Capybara
+          %p.small PostgreSQL
+          %p.small Docker
+          %p.small AWS
+          %p
+            The Gnar Company is a software consultancy that builds everything
+            from massive systems to help keep Massachusetts' ride sharing a
+            little bit safer, to mobile apps for surgeons to view plans for
+            future surgeries.
+            %br
+            %br
+
+            During my time here, I've learned more than I could have ever
+            imagined about multiple different programming languages (some of
+            which I didn't even know existed) and programming design patterns,
+            to the soft skills involved in project planning and execution. I've
+            even dipped my toes into the world of public speaking since being
+            here!
+            %br
+            %br
+
+            The Gnar goes above and beyond to make sure that employee growth is
+            as high a priority as the quality of the products we design and
+            create, and working here has been my greatest professional
+            accomplishment by far!
+        .bigspace
+
+        .two_third_last.wow.fadeInUpBig{"data-wow-duration" => "2s", "data-wow-offset" => "80"}
           %h3 Full-Stack Ruby on Rails Developer
           %h5
-            = link_to "salesEQUITY", "https://www.salesequity.com/how-it-works/",
+            = link_to "Encompass-CX (formerly salesEQUITY)", "https://encompass-cx.com/overview/",
               target: "_blank"
           %p.small Ruby on Rails
           %p.small JavaScript
           %p.small jQuery
-          %p.small Rspec
+          %p.small RSpec
           %p.small Capybara
           %p.small PostgreSQL
           %p.small Heroku
@@ -223,14 +262,13 @@
 
             Working on a small team of just three developers allowed me to take
             on a plethora of different projects - new features, refactoring, UX
-            Design, etc. The largest of which was
-            = link_to "Trusted Advisor Action Plans",
-              "https://www.salesequity.com/solutions/"
-            which was built for clients who wanted to do more than just analyze
-            data, but actually find solutions. The feature had to be built and
-            pushed under an extremely tight deadline. However, because the code
-            I was writing was extremely modular, I was able to constantly re-use
-            already written code to produce a product ahead of schedule.
+            Design, etc. The largest of which was the "Trusted Advisor Action
+            Plans" feature which was built for clients who wanted to do more
+            than just analyze data, but actually find solutions. The feature
+            had to be built and pushed under an extremely tight deadline.
+            However, because the code I was writing was extremely modular, I
+            was able to constantly re-use already written code to produce a
+            product ahead of schedule.
 
         .bigspace
 
@@ -267,7 +305,7 @@
             about how to think like a developer.
             %br
             %br
-            I learned the principles of Object Oriented Design, the importance
+            I learned the principles of Object-Oriented Design, the importance
             of Test-Driven Development, what a proper Git workflow looks like,
             pair programming etiquette, how to network and talk to other
             developers and find mentors, I could go on. Metis was a

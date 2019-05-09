@@ -1,7 +1,7 @@
 require "spec_helper"
 
-feature "A user sends an email through the contact form", :js do
-  specify "and can send me an email" do
+RSpec.describe "A user sends an email through the contact form", type: :system do
+  specify "and can send me an email", :js do
     fake_email = "hello@example.com"
 
     visit "/"

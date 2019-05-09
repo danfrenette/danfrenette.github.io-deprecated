@@ -1,5 +1,9 @@
-.wow{ class: "fadeIn#{fade_in_direction}Big #{last ? "one_third_last" : "one_third"}",
-"data-wow-duration" => "2s", "data-wow-offset" => "80" }
+= content_tag :div,
+  class: "wow fadeIn#{fade_in_direction}Big #{last ? "one_third_last" : "one_third"}",
+  id: title.downcase.gsub(" ", "_"),
+  "data-wow-duration" => "2s",
+  "data-wow-offset" => "80" do
+
   .infopanel
     = link_to asset_path(gif_path), class: "fancybox", rel: "group2" do
       .eye.portfolio-image

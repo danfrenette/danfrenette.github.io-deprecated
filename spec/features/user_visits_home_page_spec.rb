@@ -1,6 +1,6 @@
-require "spec_helper"
+require "rails_helper"
 
-feature "A user visits the home page", :js do
+RSpec.describe "A user visits the home page", type: :system do
   before(:each) do
     visit("/")
   end
@@ -15,25 +15,17 @@ feature "A user visits the home page", :js do
       click_link("Things I've Made")
     end
 
-    specify "Awesome Chat App" do
+    specify "Awesome Chat App", :js do
       within "#awesome_chat_app" do
-        expect(page).to have_content("Awesome Chat App")
-        expect(page).to have_css("img[src*='awesome-chat-app.jpg']")
-        find(".icon-github-circled").click
-
-        expect(current_path).to eq("/danfrenette/dans-awesome-chat-app/")
-        expect(page).to have_content("Repository for Dan's Awesome Chat App")
+        expect(page).to have_content("Awesome Chat App".upcase)
+        expect(page).to have_link(href: "https://github.com/danfrenette/chatrooms")
       end
     end
 
-    specify "Catch of the Day" do
+    specify "Catch of the Day", :js do
       within "#catch_of_the_day" do
-        expect(page).to have_content("Catch of the Day")
-        expect(page).to have_css("img[src*='catch-of-the-day.jpg']")
-        find(".icon-github-circled").click
-
-        expect(current_path).to eq("/danfrenette/Catch-of-the-Day/")
-        expect(page).to have_content("Repository for Catch of the Day")
+        expect(page).to have_content("Catch of the Day".upcase)
+        expect(page).to have_link(href: "https://github.com/danfrenette/Catch-of-the-Day")
       end
     end
   end

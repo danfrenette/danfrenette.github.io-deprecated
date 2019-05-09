@@ -410,7 +410,7 @@ DEPENDENCIES
   pry
   pry-rails
   puma (~> 3.7)
-  rails (~> 5.2.1)
+  rails (~> 5.2.3)
   rails_12factor
   recaptcha
   rspec-its

@@ -384,7 +384,7 @@ h5 ul li {
 	overflow: auto;
 }
 .parallax1 {
-    background-image: asset-url("background2.jpg");
+    background-image: asset-path("background2.jpg");
     overflow: auto;
     padding: 80px 0;
     -webkit-background-size: cover;
@@ -395,7 +395,7 @@ h5 ul li {
 }
 .parallax1 p, .parallax1 h2, .parallax2 p, .parallax2 h2 { color: #ffffff; }
 .parallax2 {
-    background-image: asset-url("background2.jpg");
+    background-image: asset-path("background2.jpg");
     overflow: auto;
     padding: 80px 0;
     -webkit-background-size: cover;
@@ -713,7 +713,7 @@ h5 ul li {
     text-transform: uppercase;
 }
 .eye {
-    background-image: asset-url("magnify.gif");
+    background-image: asset-path("magnify.gif");
     background-position: center center;
     width: 99%;
     height: auto;
